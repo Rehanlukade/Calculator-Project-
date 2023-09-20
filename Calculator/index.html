@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="output">
+                <input max="6" readonly class="output-child">
+                </input>
+            </div>
+            <div class="input">
+                <div class="layer-1 layers">
+                    <button onclick="display_7()">7</button>
+                    <button onclick="display_8()">8</button>
+                    <button onclick="display_9()">9</button>
+                    <button onclick="display_del()" class="del">DEL</button>
+                </div>
+                <div class="layer-2 layers">
+                    <button onclick="display_4()">4</button>
+                    <button onclick="display_5()">5</button>
+                    <button onclick="display_6()">6</button>
+                    <button onclick="display_plus()">+</button>
+                </div>
+                <div class="layer-3 layers">
+                    <button onclick="display_1()">1</button>
+                    <button onclick="display_2()">2</button>
+                    <button onclick="display_3()">3</button>
+                    <button onclick="display_minus()">-</button>
+                </div>
+                <div class="layer-4 layers">
+                    <button onclick="display_dot()">.</button>
+                    <button onclick="display_0()">0</button>
+                    <button onclick="display_divide()">/</button>
+                    <button onclick="display_multiply()">×</button>
+                </div>
+                <div class="layer-5 layers">
+                    <button onclick="display_reset()" class="reset">RESET</button>
+                    <button onclick="display_answer()" class="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
